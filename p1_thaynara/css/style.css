@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400 600 700;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #2563eb;
+  color: white;
+  padding-bottom: 60px;
+  margin-bottom: 25px;
+}
+
+footer {
+
+  display: flex;
+  background-color: #0f172a;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.conteudo {
+
+  width: 50vw;
+  margin: 0 auto;
+
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+p,
+li {
+  font-size: 14px;
+}
+
+#topo-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#topo-header nav ul {
+  display: flex;
+}
+
+#topo-header nav ul li {
+  list-style-type: none;
+  margin-right: 12px;
+}
+
+#topo-header nav ul li a:hover {
+  text-decoration-line: underline;
+}
+
+#topo-header p {
+  margin-bottom: 10px;
+}
+
+
+#botao-header {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: #2563eb;
+}
+
+#botao-header:hover {
+  background-color: #ddd;
+}
+
+#p2-header {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+#sobre {
+  margin-bottom: 70px;
+}
+
+#sobre h3 {
+  margin-bottom: 0;
+}
+
+#sobre p {
+  margin-top: 0;
+
+}
+
+#sobre ul {
+  padding-left: 0;
+}
+
+#diferenciais {
+  display: flex;
+}
+
+#diferenciais div {
+
+  flex: 1;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 30px;
+
+}
+
+#diferenciais div:hover {
+  background-color: #f1f5f9;
+}
+
+#section-diferenciais {
+  margin-bottom: 20px;
+}
+
+#section-depoimentos {
+
+  background-color: #e2e8f0;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+#depoimentos-divs {
+  display: flex;
+}
+
+#depoimentos-divs div {
+
+  display: flex;
+  flex: 1;
+  margin-right: 20px;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+  padding: 10px;
+
+  align-items: center;
+
+}
+
+#depoimentos-divs div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+
+}
+
+#section-formulario h3 {
+  margin-bottom: 0;
+}
+
+#campo input,
+textarea {
+  display: block;
+  width: 335px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 10px;
+  border-style: groove;
+  border-color: #c0c0c0;
+  border-width: 1px;
+}
+
+#campo input {
+  height: 30px;
+}
+
+#botao-form {
+
+  background-color: #2563eb;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  width: 355px;
+}
+
+#botao-form:hover {
+  background-color: #1e40af;
+}
+
+@media(max-width:768px) {
+
+  #topo-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    margin: 0;
+  }
+
+  nav ul li {
+    flex-direction: row;
+    flex-wrap: wrap
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  #depoimentos-divs {
+    flex-direction: column;
+
+  }
+
+  #depoimentos-divs>div {
+    margin-bottom: 10px;
+  }
+
+  #diferenciais {
+    flex-direction: column;
+  }
+
+
+
+}
