@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(249, 177, 249);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,19 @@
+<section>
+    <h2>Lista de Tarefas</h2>
+    <p><b>Total:</b> {{totalTarefas()}} tarefas <b>Concluídas:</b> {{concluidas()}} <b>Pendentes:</b> {{pendentes()}}</p>
+    <ul>
+        @for(item of tarefas ; track $index ; let i = $index){
+        <div>
+            <li>{{i + 1}}. {{item.descricao}}  
+                @if (item.concluida){
+                   - Concluída
+                } 
+            </li>
+        <button (click)="alternar(item,i)">Alternar</button>
+        </div>
+        }
+        @empty {
+            <li>Nenhuma tarefa cadastrada.</li>
+        }
+    </ul>
+</section>
